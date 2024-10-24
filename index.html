@@ -3,67 +3,65 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>WEBSITE-Practice</title>
+    <title>Boutique Login</title>
     <style>
         body {
             font-family: 'Courier New', Courier, monospace;
             font-weight: bold;
             margin: 0;
             padding: 0;
-            background-color: rgb(149, 78, 182);
-            display: flex; /* Use flexbox for centering */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            height: 100vh; /* Full height */
+            background-color: #4a90e2; /* Changed background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
             text-align: center;
-            width: 300px; /* Fixed width for better centering */
+            width: 300px;
             padding: 20px;
-            background-color: rgb(110, 52, 133);
-            box-shadow: 0 10px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgb(64, 0, 72);
-            border-radius: 20px; /* Slightly rounded corners */
+            background-color: #f7f7f7; /* Changed form background color */
+            box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
         }
         h1 {
-            color: black;
-            font-weight: bold;
-            margin-bottom: 20px; /* Space below the heading */
+            color: #333; /* Changed header color */
+            margin-bottom: 20px;
         }
         label {
-            display: block; /* Make labels block elements */
-            margin-top: 10px; /* Space above each label */
+            display: block;
+            margin-top: 10px;
         }
         input {
-            width: calc(100% - 20px); /* Full width minus padding */
-            padding: 10px; /* Padding inside input */
-            margin: 5px auto; /* Center and space above/below */
-            border: 1px solid #ccc; /* Border for inputs */
-            border-radius: 5px; /* Rounded corners for inputs */
-            box-sizing: border-box; /* Include padding in width */
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
         }
         button {
-            background-color: rgb(225, 201, 247);
-            padding: 10px; /* Adjusted padding */
-            width: 100%; /* Full width */
-            color: black;
+            background-color: #e1f5fe; /* Changed button color */
+            padding: 10px;
+            width: 100%;
+            color: #333;
             border: none;
-            border-radius: 5px; /* Rounded corners */
-            cursor: pointer; /* Pointer cursor on hover */
-            margin-top: 10px; /* Space above button */
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
         }
         button:hover {
-            background-color: rgb(164, 83, 240);
+            background-color: #81d4fa; /* Button hover color */
         }
         .login-GIF {
             width: 100px;
             height: 100px;
-            margin: 0 auto 20px; /* Center image */
+            margin: 0 auto 20px;
             display: block;
         }
         #error-message {
-            color: red; /* Error message color */
-            margin-top: 10px; /* Space above error message */
+            color: red;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -71,7 +69,7 @@
     <div class="container">
         <h1>Log In</h1>
         <form id="loginForm">
-            <img src="download.gif" class="login-GIF"> 
+            <img src="https://imgs.search.brave.com/GN8-DHmWq_34HV5Fb18unTekedQMfTAtDeo0Ikn15Do/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTIuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhPSE16YTJVNWNU/WnBjRFIwZFdab2Vt/TTFaVFl6YVdGeWNH/eG5ORE4wZVRFeGJY/bDZZM1J2WWlabGNE/MTJNVjluYVdaelgz/TmxZWEpqYUNaamRE/MW4vYlNFWTA4cnZ2/Y051ZXlabEhlL2dp/cGh5LmdpZg.gif" class="login-GIF"> 
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" required>
             <label for="password">Password:</label>
@@ -83,12 +81,12 @@
 
     <script>
         document.getElementById('loginForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
+            event.preventDefault();
             
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            // Simple authentication check (for demo purposes)
+            // Simple authentication check
             if (username === 'Maam mitzi' && password === '12345') {
                 alert('Login successful!');
                 // Redirect to home page
