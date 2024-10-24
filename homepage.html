@@ -85,6 +85,7 @@
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
+                    <button class="btn btn-outline-danger ms-2" onclick="logout()">Log Out</button>
                 </div>
             </div>
         </nav>
@@ -94,14 +95,46 @@
     <main class="container">
         <h1>WELCOME TO MY WEBPAGE!</h1>
         <h2>Shop all you like!</h2>
-        <!-- Image Section -->
+        <h2>----------------------------------------------------------------------------------------------------</h2>
+        
+        <!-- Card Section -->
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img URL="https://assets.myntassets.com/w_412,q_60,dpr_2,fl_progressive/assets/images/26861168/2024/1/17/9e0ad2b5-6591-42c4-a97e-3aec3219c6fc1705492661609StyleCastGreenRuchedShoulderStrapsCottonBodyconDress1.jpg" class="card-img-top" alt="placeholder">
+                    <div class="card-body">
+                        <h5 class="card-title">New Arrival </h5>
+                        <a href="#" class="btn btn-primary">Go>>></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="image-section text-center">
-            <img src="https://i.pinimg.com/736x/ac/47/a2/ac47a2992e533fa74e4b6380d8447d7c.jpg" class="rounded" alt="Ghost Image 1" width="300">
-            <img src="https://i.pinimg.com/564x/09/ca/b1/09cab17a8e6549e5b655a9a3b769bbb1.jpg" class="rounded" alt="Ghost Image 2" width="300">
-            <img src="https://i.pinimg.com/736x/b9/dc/8c/b9dc8c30adaecf8e8adb95b33490796e.jpg" class="rounded" alt="Ghost Image 3" width="300">
-            <img src="https://via.placeholder.com/300" class="rounded" alt="Placeholder Image" width="300">
-            <img src="https://via.placeholder.com/300" class="rounded" alt="Placeholder Image" width="300">
-            <img src="https://via.placeholder.com/300" class="rounded" alt="Placeholder Image" width="300">
+            <h2>FOR YOU</h2>
+            <img src="https://i.pinimg.com/736x/ac/47/a2/ac47a2992e533fa74e4b6380d8447d7c.jpg" class="rounded" alt="Ghost Image 1" width="400" height="400">
+            <img src="https://i.pinimg.com/564x/09/ca/b1/09cab17a8e6549e5b655a9a3b769bbb1.jpg" class="rounded" alt="Ghost Image 2" width="400" height="400">
+            <img src="https://i.pinimg.com/736x/b9/dc/8c/b9dc8c30adaecf8e8adb95b33490796e.jpg" class="rounded" alt="Ghost Image 3" width="400" height="400">
         </div>
     </main>
 
@@ -113,7 +146,7 @@
     <script>
         function logout() {
             alert("You have been logged out!");
-            window.location.href = "index.html"; // Adjust as needed
+            window.location.href = "index.html"; // Adjust this to your login page
         }
     </script>
 </body>
