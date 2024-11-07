@@ -1,2 +1,2 @@
-email: Maam mitzi
-password: 12345
+Email: Maam mitzi
+Password: 12345
